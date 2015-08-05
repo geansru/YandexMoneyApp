@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="PaymentCategory" representedClassName="YD_App.PaymentCategory" syncable="YES">
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="subcategories" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="PaymentSubCategory" inverseName="categories" inverseEntity="PaymentSubCategory" syncable="YES"/>
+    </entity>
+    <entity name="PaymentSubCategory" representedClassName="YD_App.PaymentSubCategory" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="categories" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PaymentCategory" inverseName="subcategories" inverseEntity="PaymentCategory" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PaymentCategory" positionX="72" positionY="54" width="128" height="75"/>
+        <element name="PaymentSubCategory" positionX="81" positionY="63" width="128" height="90"/>
+    </elements>
+</model>

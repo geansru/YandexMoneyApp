@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../Sub.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../Category.swift">
+   </FileRef>
+   <FileRef
+      location = "self:YD App.xcodeproj">
+   </FileRef>
+</Workspace>
